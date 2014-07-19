@@ -1,0 +1,1607 @@
+/* Chosen css */
+/* @group Base */
+/* line 5, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 13px;
+  zoom: 1;
+  *display: inline;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+/* line 16, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-drop {
+  position: absolute;
+  top: 100%;
+  left: -9999px;
+  z-index: 1010;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #aaa;
+  border-top: 0;
+  background: #fff;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* line 30, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container.chosen-with-drop .chosen-drop {
+  left: 0;
+}
+
+/* line 33, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container a {
+  cursor: pointer;
+}
+
+/* @end */
+/* @group Single Chosen */
+/* line 39, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-single {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 0 0 0 8px;
+  height: 23px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  background-color: #fff;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, white), color-stop(50%, #f6f6f6), color-stop(52%, #eeeeee), color-stop(100%, #f4f4f4));
+  background: -webkit-linear-gradient(top, white 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background: -moz-linear-gradient(top, white 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background: -o-linear-gradient(top, white 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background: linear-gradient(top, #ffffff 20%, #f6f6f6 50%, #eeeeee 52%, #f4f4f4 100%);
+  background-clip: padding-box;
+  box-shadow: 0 0 3px white inset, 0 1px 1px rgba(0, 0, 0, 0.1);
+  color: #444;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 24px;
+}
+
+/* line 60, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-default {
+  color: #999;
+}
+
+/* line 63, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-single span {
+  display: block;
+  overflow: hidden;
+  margin-right: 26px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* line 70, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-single-with-deselect span {
+  margin-right: 38px;
+}
+
+/* line 73, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-single abbr {
+  position: absolute;
+  top: 6px;
+  right: 26px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") -42px 1px no-repeat;
+  font-size: 1px;
+}
+
+/* line 83, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-single abbr:hover {
+  background-position: -42px -10px;
+}
+
+/* line 86, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single.chosen-disabled .chosen-single abbr:hover {
+  background-position: -42px -10px;
+}
+
+/* line 89, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-single div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 18px;
+  height: 100%;
+}
+
+/* line 97, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-single div b {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat 0px 2px;
+}
+
+/* line 103, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-search {
+  position: relative;
+  z-index: 1010;
+  margin: 0;
+  padding: 3px 4px;
+  white-space: nowrap;
+}
+
+/* line 110, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-search input[type="text"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 1px 0;
+  padding: 4px 20px 4px 5px;
+  width: 100%;
+  height: auto;
+  outline: 0;
+  border: 1px solid #aaa;
+  background: white url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat 100% -20px;
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat 100% -20px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, white));
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat 100% -20px, -webkit-linear-gradient(#eeeeee 1%, white 15%);
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat 100% -20px, -moz-linear-gradient(#eeeeee 1%, white 15%);
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat 100% -20px, -o-linear-gradient(#eeeeee 1%, white 15%);
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat 100% -20px, linear-gradient(#eeeeee 1%, #ffffff 15%);
+  font-size: 1em;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+
+/* line 131, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single .chosen-drop {
+  margin-top: -1px;
+  border-radius: 0 0 4px 4px;
+  background-clip: padding-box;
+}
+
+/* line 136, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-single.chosen-container-single-nosearch .chosen-search {
+  position: absolute;
+  left: -9999px;
+}
+
+/* @end */
+/* @group Results */
+/* line 143, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results {
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0 4px 4px 0;
+  padding: 0 0 0 4px;
+  max-height: 240px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* line 152, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results li {
+  display: none;
+  margin: 0;
+  padding: 5px 6px;
+  list-style: none;
+  line-height: 15px;
+}
+
+/* line 159, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results li.active-result {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* line 163, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results li.disabled-result {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+}
+
+/* line 168, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results li.highlighted {
+  background-color: #3875d7;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #3875d7), color-stop(90%, #2a62bc));
+  background-image: -webkit-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -moz-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: -o-linear-gradient(#3875d7 20%, #2a62bc 90%);
+  background-image: linear-gradient(#3875d7 20%, #2a62bc 90%);
+  color: #fff;
+}
+
+/* line 177, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results li.no-results {
+  display: list-item;
+  background: #f4f4f4;
+}
+
+/* line 181, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results li.group-result {
+  display: list-item;
+  font-weight: bold;
+  cursor: default;
+}
+
+/* line 186, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results li.group-option {
+  padding-left: 15px;
+}
+
+/* line 189, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container .chosen-results li em {
+  font-style: normal;
+  text-decoration: underline;
+}
+
+/* @end */
+/* @group Multi Chosen */
+/* line 196, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto !important;
+  height: 1%;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, white));
+  background-image: -webkit-linear-gradient(#eeeeee 1%, white 15%);
+  background-image: -moz-linear-gradient(#eeeeee 1%, white 15%);
+  background-image: -o-linear-gradient(#eeeeee 1%, white 15%);
+  background-image: linear-gradient(#eeeeee 1%, #ffffff 15%);
+  cursor: text;
+}
+
+/* line 216, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li {
+  float: left;
+  list-style: none;
+}
+
+/* line 220, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field {
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+/* line 225, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  margin: 1px 0;
+  padding: 5px;
+  height: 15px;
+  outline: 0;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none;
+  color: #666;
+  font-size: 100%;
+  font-family: sans-serif;
+  line-height: normal;
+  border-radius: 0;
+}
+
+/* line 239, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-field .default {
+  color: #999;
+}
+
+/* line 242, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice {
+  position: relative;
+  margin: 3px 0 3px 5px;
+  padding: 3px 20px 3px 5px;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -moz-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -o-linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(#f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-clip: padding-box;
+  box-shadow: 0 0 2px white inset, 0 1px 0 rgba(0, 0, 0, 0.05);
+  color: #333;
+  line-height: 13px;
+  cursor: default;
+}
+
+/* line 260, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close {
+  position: absolute;
+  top: 4px;
+  right: 3px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") -42px 1px no-repeat;
+  font-size: 1px;
+}
+
+/* line 270, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice .search-choice-close:hover {
+  background-position: -42px -10px;
+}
+
+/* line 273, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-disabled {
+  padding-right: 5px;
+  border: 1px solid #ccc;
+  background-color: #e4e4e4;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #f4f4f4), color-stop(50%, #f0f0f0), color-stop(52%, #e8e8e8), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -moz-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: -o-linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  background-image: linear-gradient(top, #f4f4f4 20%, #f0f0f0 50%, #e8e8e8 52%, #eeeeee 100%);
+  color: #666;
+}
+
+/* line 284, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-focus {
+  background: #d4d4d4;
+}
+
+/* line 287, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-choices li.search-choice-focus .search-choice-close {
+  background-position: -42px -10px;
+}
+
+/* line 290, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-results {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 294, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-multi .chosen-drop .result-selected {
+  display: list-item;
+  color: #ccc;
+  cursor: default;
+}
+
+/* @end */
+/* @group Active  */
+/* line 302, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-active .chosen-single {
+  border: 1px solid #5897fb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* line 306, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single {
+  border: 1px solid #aaa;
+  -moz-border-radius-bottomright: 0;
+  border-bottom-right-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-bottom-left-radius: 0;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(20%, #eeeeee), color-stop(80%, white));
+  background-image: -webkit-linear-gradient(#eeeeee 20%, white 80%);
+  background-image: -moz-linear-gradient(#eeeeee 20%, white 80%);
+  background-image: -o-linear-gradient(#eeeeee 20%, white 80%);
+  background-image: linear-gradient(#eeeeee 20%, #ffffff 80%);
+  box-shadow: 0 1px 0 #fff inset;
+}
+
+/* line 319, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-left: none;
+  background: transparent;
+}
+
+/* line 323, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-active.chosen-with-drop .chosen-single div b {
+  background-position: -18px 2px;
+}
+
+/* line 326, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-active .chosen-choices {
+  border: 1px solid #5897fb;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* line 330, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-container-active .chosen-choices li.search-field input[type="text"] {
+  color: #111 !important;
+}
+
+/* @end */
+/* @group Disabled Support */
+/* line 336, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-disabled {
+  opacity: 0.5 !important;
+  cursor: default;
+}
+
+/* line 340, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-disabled .chosen-single {
+  cursor: default;
+}
+
+/* line 343, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-disabled .chosen-choices .search-choice .search-choice-close {
+  cursor: default;
+}
+
+/* @end */
+/* @group Right to Left */
+/* line 349, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl {
+  text-align: right;
+}
+
+/* line 352, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-single {
+  overflow: visible;
+  padding: 0 8px 0 0;
+}
+
+/* line 356, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-single span {
+  margin-right: 0;
+  margin-left: 26px;
+  direction: rtl;
+}
+
+/* line 361, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-single-with-deselect span {
+  margin-left: 38px;
+}
+
+/* line 364, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-single div {
+  right: auto;
+  left: 3px;
+}
+
+/* line 368, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-single abbr {
+  right: auto;
+  left: 26px;
+}
+
+/* line 372, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-choices li {
+  float: right;
+}
+
+/* line 375, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-field input[type="text"] {
+  direction: rtl;
+}
+
+/* line 378, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-choice {
+  margin: 3px 5px 3px 0;
+  padding: 3px 5px 3px 19px;
+}
+
+/* line 382, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-choices li.search-choice .search-choice-close {
+  right: auto;
+  left: 4px;
+}
+
+/* line 387, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl.chosen-container-single-nosearch .chosen-search,
+.chosen-rtl .chosen-drop {
+  left: 9999px;
+}
+
+/* line 390, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl.chosen-container-single .chosen-results {
+  margin: 0 0 4px 4px;
+  padding: 0 4px 0 0;
+}
+
+/* line 394, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-results li.group-option {
+  padding-right: 15px;
+  padding-left: 0;
+}
+
+/* line 398, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl.chosen-container-active.chosen-with-drop .chosen-single div {
+  border-right: none;
+}
+
+/* line 401, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl .chosen-search input[type="text"] {
+  padding: 4px 5px 4px 20px;
+  background: white url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat -30px -20px;
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat -30px -20px, -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(1%, #eeeeee), color-stop(15%, white));
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat -30px -20px, -webkit-linear-gradient(#eeeeee 1%, white 15%);
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat -30px -20px, -moz-linear-gradient(#eeeeee 1%, white 15%);
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat -30px -20px, -o-linear-gradient(#eeeeee 1%, white 15%);
+  background: url("../../assets/javascript/chosen/chosen-sprite.png") no-repeat -30px -20px, linear-gradient(#eeeeee 1%, #ffffff 15%);
+  direction: rtl;
+}
+
+/* line 411, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl.chosen-container-single .chosen-single div b {
+  background-position: 6px 2px;
+}
+
+/* line 414, ../scss/scss/twitterstats/_chosen.scss */
+.chosen-rtl.chosen-container-single.chosen-with-drop .chosen-single div b {
+  background-position: -12px 2px;
+}
+
+/* @end */
+/* @group Retina compatibility */
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-resolution: 144dpi) {
+  /* line 427, ../scss/scss/twitterstats/_chosen.scss */
+  .chosen-rtl .chosen-search input[type="text"],
+  .chosen-container-single .chosen-single abbr,
+  .chosen-container-single .chosen-single div b,
+  .chosen-container-single .chosen-search input[type="text"],
+  .chosen-container-multi .chosen-choices .search-choice .search-choice-close,
+  .chosen-container .chosen-results-scroll-down span,
+  .chosen-container .chosen-results-scroll-up span {
+    background-image: url("../../assets/javascript/chosen/chosen-sprite.png") !important;
+    background-size: 52px 37px !important;
+    background-repeat: no-repeat !important;
+  }
+}
+/* @end chosen css */
+/* nprogress css */
+/* Make clicks pass-through */
+/* line 3, ../scss/scss/twitterstats/_nprogress.scss */
+#nprogress {
+  pointer-events: none;
+}
+
+/* line 7, ../scss/scss/twitterstats/_nprogress.scss */
+#nprogress .bar {
+  background: #178799;
+  position: fixed;
+  z-index: 100;
+  top: 52px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Fancy blur effect */
+/* line 20, ../scss/scss/twitterstats/_nprogress.scss */
+#nprogress .peg {
+  display: block;
+  position: absolute;
+  right: 0px;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px #29d, 0 0 5px #29d;
+  opacity: 1.0;
+  -webkit-transform: rotate(3deg) translate(0px, -4px);
+  -ms-transform: rotate(3deg) translate(0px, -4px);
+  transform: rotate(3deg) translate(0px, -4px);
+}
+
+/* Remove these to get rid of the spinner */
+/* line 35, ../scss/scss/twitterstats/_nprogress.scss */
+#nprogress .spinner {
+  display: block;
+  position: fixed;
+  z-index: 100;
+  top: 52px;
+  right: 15px;
+}
+
+/* line 43, ../scss/scss/twitterstats/_nprogress.scss */
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+  border: solid 2px transparent;
+  border-top-color: #178799;
+  border-left-color: #178799;
+  border-radius: 50%;
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+}
+
+@-webkit-keyframes nprogress-spinner {
+  /* line 58, ../scss/scss/twitterstats/_nprogress.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 59, ../scss/scss/twitterstats/_nprogress.scss */
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes nprogress-spinner {
+  /* line 62, ../scss/scss/twitterstats/_nprogress.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 63, ../scss/scss/twitterstats/_nprogress.scss */
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* end nprogress css */
+/* line 1, ../scss/scss/twitterstats/_ng-grid.scss */
+.gridStyle {
+  border: 1px solid #d4d4d4;
+  height: 400px;
+}
+
+/* line 9, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGrid {
+  background-color: #fdfdfd;
+}
+
+/* line 12, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGrid input[type="checkbox"] {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 16, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGrid input {
+  vertical-align: top;
+}
+
+/* line 19, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGrid.unselectable {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+/* line 26, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngViewport {
+  overflow: auto;
+  min-height: 20px;
+}
+
+/* line 31, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngViewport:focus {
+  outline: none;
+}
+
+/* line 34, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngCanvas {
+  position: relative;
+}
+
+/* line 37, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngVerticalBar {
+  position: absolute;
+  right: 0;
+  width: 0;
+}
+
+/* line 42, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngVerticalBarVisible {
+  width: 1px;
+  background-color: #d4d4d4;
+}
+
+/* line 46, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderContainer {
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  background-color: inherit;
+}
+
+/* line 52, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderCell {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: inherit;
+}
+
+/* line 58, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderCell.pinned {
+  z-index: 1;
+}
+
+/* line 61, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderSortColumn {
+  position: absolute;
+  overflow: hidden;
+}
+
+/* line 65, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngTopPanel {
+  position: relative;
+  z-index: 1;
+  background-color: #eaeaea;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/* line 71, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngSortButtonDown {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: gray transparent;
+  border-style: solid;
+  border-width: 0 5px 5px 5px;
+  height: 0;
+  width: 0;
+}
+
+/* line 84, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngNoSort {
+  cursor: default;
+}
+
+/* line 87, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderButton {
+  position: absolute;
+  right: 2px;
+  top: 8px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px;
+  z-index: 1;
+  background-color: #9fbbb4;
+  cursor: pointer;
+}
+
+/* line 100, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngSortButtonUp {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-color: gray transparent;
+  border-style: solid;
+  border-width: 5px 5px 0 5px;
+  height: 0;
+  width: 0;
+}
+
+/* line 113, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderScroller {
+  position: absolute;
+  background-color: inherit;
+}
+
+/* line 117, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngSortPriority {
+  position: absolute;
+  top: -5px;
+  left: 1px;
+  font-size: 6pt;
+  font-weight: bold;
+}
+
+/* line 124, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderGrip {
+  cursor: col-resize;
+  width: 10px;
+  right: -5px;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  background-color: transparent;
+}
+
+/* line 133, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderText {
+  padding: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* line 144, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngHeaderButtonArrow {
+  position: absolute;
+  top: 4px;
+  left: 3px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6.5px 4.5px 0 4.5px;
+  border-color: #4d4d4d transparent transparent transparent;
+}
+
+/* line 154, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngPinnedIcon {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAAmElEQVQoU33PQapBURjA8UtkwJuaWYGSgfQWYBMvczPmTCzAAGVuaA228BZhRCkDGSmE31FucuRfvzq3vr5zT/JSjSU7DsypEPXDkDVn2hSIytJhw4kWGaLCxgHh2gt/RBuLzNhz5caWPjnSqqw4EraFfwznf8qklWjwy4IRTerkiQoPGtPl40OehcEJvcfXl8LglLfBJLkDcMgbgHlHhK8AAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  height: 10px;
+  width: 10px;
+}
+
+/* line 163, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngUnPinnedIcon {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABp0RVh0U29mdHdhcmUAUGFpbnQuTkVUIHYzLjUuMTAw9HKhAAAAlElEQVQoU33PPQrCQBRF4fFnI2KfZVi5ARvdgo1l6mwmkCJVOgluwd5OwUoDtnoOxAei8cLXTN7cvEl/skCNDCMPfsUPO5zQwOHIDEvYtMURHe6wOVLgigvOePRyeDkyR4ln7wZ//7XfFBu8B23+aDJjrHGAwza7hjtHJvDmHg7b7Bru7AMjK7Rw2ObBVHDY5oGk9AKQNB2zy8MBTgAAAABJRU5ErkJggg==);
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  right: 5px;
+  top: 5px;
+}
+
+/* line 172, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngColMenu {
+  right: 2px;
+  padding: 5px;
+  top: 25px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #bdd0cb;
+  position: absolute;
+  border: 2px solid #d4d4d4;
+  z-index: 1;
+}
+
+/* line 184, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngColListCheckbox {
+  position: relative;
+  right: 3px;
+  top: 4px;
+}
+
+/* line 189, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngColList {
+  list-style-type: none;
+}
+
+/* line 192, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngColListItem {
+  position: relative;
+  right: 17px;
+  top: 2px;
+  white-space: nowrap;
+}
+
+/* line 198, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngMenuText {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+/* line 203, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupPanel {
+  background-color: #eaeaea;
+  overflow: hidden;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/* line 208, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupPanelDescription {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+/* line 212, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 217, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngAggHeader {
+  position: absolute;
+  border: none;
+}
+
+/* line 221, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupElement {
+  float: left;
+  height: 100%;
+  width: 100%;
+}
+
+/* line 226, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupIcon {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAEFJREFUKFNjoAhISkr+h2J5JDZODNXGwGBsbPwfhIGAA8bGh6HaGBiAGhxAGJmND4M1gQCSM0adCsVQbcPcqQwMALWDGyDvWPefAAAAAElFTkSuQmCC);
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: -2px;
+  top: 2px;
+}
+
+/* line 235, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupedByIcon {
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAadEVYdFNvZnR3YXJlAFBhaW50Lk5FVCB2My41LjEwMPRyoQAAAElJREFUKFNjoAhISkr+R8LyaHwMDNXGwGBsbPwfhoGAA5mPDUO1oWpE52PDYE0gALTFAYbR+dgwWBMIoPlh1I9ADNU2NPzIwAAAFQYI9E4OLvEAAAAASUVORK5CYII=);
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  right: -2px;
+  top: 2px;
+}
+
+/* line 244, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupName {
+  background-color: #fdfdfd;
+  border: 1px solid #d4d4d4;
+  padding: 3px 10px;
+  float: left;
+  margin-left: 0;
+  margin-top: 2px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+/* line 256, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupArrow {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 6px solid black;
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+  float: right;
+}
+
+/* line 267, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupingNumber {
+  position: absolute;
+  right: -10px;
+  top: -2px;
+}
+
+/* line 272, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngAggArrowCollapsed {
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 8.7px;
+  border-color: transparent transparent transparent #000000;
+}
+
+/* line 282, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupItem {
+  float: left;
+}
+
+/* line 285, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngGroupItem:first-child {
+  margin-left: 2px;
+}
+
+/* line 288, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngRemoveGroup {
+  width: 5px;
+  -moz-opacity: 0.4;
+  opacity: 0.4;
+  margin-top: -1px;
+  margin-left: 5px;
+}
+
+/* line 295, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngRemoveGroup:hover {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  -moz-opacity: 0.7;
+  opacity: 0.7;
+}
+
+/* line 302, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngAggArrowExpanded {
+  position: absolute;
+  left: 8px;
+  bottom: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 9px 9px;
+  border-color: transparent transparent #000000 transparent;
+}
+
+/* line 312, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngAggregate {
+  position: absolute;
+  background-color: #c9dde1;
+  border-bottom: 1px solid beige;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  left: 0;
+}
+
+/* line 322, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngAggregateText {
+  position: absolute;
+  left: 27px;
+  top: 5px;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+/* line 329, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngRow {
+  position: absolute;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/* line 333, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngRow.odd {
+  background-color: #fdfdfd;
+}
+
+/* line 336, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngRow.even {
+  background-color: #f3f3f3;
+}
+
+/* line 339, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngRow.selected {
+  background-color: #c9dde1;
+}
+
+/* line 342, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngCell {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: inherit;
+}
+
+/* line 349, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngCell.pinned {
+  z-index: 1;
+}
+
+/* line 352, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngCellText {
+  padding: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  white-space: nowrap;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+/* line 363, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngSelectionCell {
+  margin-top: 9px;
+  margin-left: 6px;
+}
+
+/* line 367, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngSelectionHeader {
+  position: absolute;
+  top: 11px;
+  left: 6px;
+}
+
+/* line 372, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngCellElement:focus {
+  outline: 0;
+  background-color: #b3c4c7;
+}
+
+/* line 376, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngRow.canSelect {
+  cursor: pointer;
+}
+
+/* line 379, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngSelectionCheckbox {
+  margin-top: 9px;
+  margin-left: 6px;
+}
+
+/* line 383, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngFooterPanel {
+  background-color: #eaeaea;
+  padding: 0;
+  border-top: 1px solid #d4d4d4;
+  position: relative;
+}
+
+/* line 389, ../scss/scss/twitterstats/_ng-grid.scss */
+.nglabel {
+  display: block;
+  float: left;
+  font-weight: bold;
+  padding-right: 5px;
+}
+
+/* line 395, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngTotalSelectContainer {
+  float: left;
+  margin: 5px;
+  margin-top: 7px;
+}
+
+/* line 400, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngFooterSelectedItems {
+  padding: 2px;
+}
+
+/* line 403, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngFooterTotalItems.ngnoMultiSelect {
+  padding: 0 !important;
+}
+
+/* line 406, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngPagerFirstBar {
+  width: 10px;
+  border-left: 2px solid #4d4d4d;
+  margin-top: -6px;
+  height: 12px;
+  margin-left: -3px;
+}
+
+/* line 413, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngPagerButton {
+  height: 25px;
+  min-width: 26px;
+}
+
+/* line 417, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngPagerFirstTriangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 8.7px 5px 0;
+  border-color: transparent #4d4d4d transparent transparent;
+  margin-left: 2px;
+}
+
+/* line 425, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngPagerNextTriangle {
+  margin-left: 1px;
+}
+
+/* line 428, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngPagerPrevTriangle {
+  margin-left: 0;
+}
+
+/* line 431, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngPagerLastTriangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 0 5px 8.7px;
+  border-color: transparent transparent transparent #4d4d4d;
+  margin-left: -1px;
+}
+
+/* line 439, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngPagerLastBar {
+  width: 10px;
+  border-left: 2px solid #4d4d4d;
+  margin-top: -6px;
+  height: 12px;
+  margin-left: 1px;
+}
+
+/* line 446, ../scss/scss/twitterstats/_ng-grid.scss */
+.ngFooterTotalItems {
+  padding: 2px;
+}
+
+/* line 6, ../scss/scss/twitterstats/_custom-styles.scss */
+body {
+  background-color: #ffffff;
+  color: #767676;
+  font-family: "Lato",Helvetica,Arial,sans-serif;
+}
+
+/* line 12, ../scss/scss/twitterstats/_custom-styles.scss */
+a, a:visited {
+  color: #008ac6;
+}
+
+/* line 15, ../scss/scss/twitterstats/_custom-styles.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #A0A0A0;
+}
+
+/* line 19, ../scss/scss/twitterstats/_custom-styles.scss */
+h1 {
+  font-size: 2rem;
+  line-height: 120%;
+  margin-bottom: 10px;
+}
+
+/* line 25, ../scss/scss/twitterstats/_custom-styles.scss */
+h2 {
+  font-size: 1.5rem;
+  line-height: 110%;
+  margin-bottom: 8px;
+}
+
+/* line 30, ../scss/scss/twitterstats/_custom-styles.scss */
+h3 {
+  font-size: 1.2rem;
+}
+
+/* line 33, ../scss/scss/twitterstats/_custom-styles.scss */
+.panel h4 {
+  font-size: 1.1rem;
+  color: #A0A0A0;
+}
+
+/* line 38, ../scss/scss/twitterstats/_custom-styles.scss */
+.smaller {
+  font-size: 90%;
+}
+
+/* line 41, ../scss/scss/twitterstats/_custom-styles.scss */
+#header {
+  width: 100%;
+  height: 82px;
+}
+
+/* line 46, ../scss/scss/twitterstats/_custom-styles.scss */
+#user_details {
+  margin-right: 5px;
+  margin-top: 25px;
+}
+
+/* line 53, ../scss/scss/twitterstats/_custom-styles.scss */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  background-color: #f1f1f1;
+  color: #767676;
+}
+
+/* line 57, ../scss/scss/twitterstats/_custom-styles.scss */
+.breadcrumb {
+  border: 0px;
+  background-color: #FFFFFF;
+  padding: 0.1em 0.5em;
+}
+
+/* line 62, ../scss/scss/twitterstats/_custom-styles.scss */
+.top-bar, .top-bar-section ul, .top-bar-section li a:not(.button) {
+  background: none repeat scroll 0 0 #009CAE;
+}
+
+/* line 65, ../scss/scss/twitterstats/_custom-styles.scss */
+.top-bar {
+  margin-bottom: 0.2em;
+}
+
+/* line 68, ../scss/scss/twitterstats/_custom-styles.scss */
+#model-table {
+  margin-top: 48px;
+}
+
+/* line 73, ../scss/scss/twitterstats/_custom-styles.scss */
+.parsley-error input, input.parsley-error, .parsley-error textarea, textarea.parsley-error {
+  background-color: rgba(198, 15, 19, 0.1);
+  border-color: #C60F13;
+}
+
+/* line 78, ../scss/scss/twitterstats/_custom-styles.scss */
+ul.parsley-error-list {
+  color: #C60F13;
+  list-style-type: none;
+}
+
+/* line 84, ../scss/scss/twitterstats/_custom-styles.scss */
+.chosen-container-multi .chosen-choices li.search-field input[type="text"] {
+  height: 25px;
+}
+
+/* line 88, ../scss/scss/twitterstats/_custom-styles.scss */
+.popup {
+  position: fixed;
+  top: 100px;
+  right: 10px;
+  z-index: 100;
+  width: 50%;
+}
+
+/* line 96, ../scss/scss/twitterstats/_custom-styles.scss */
+li.current a {
+  color: #999;
+  cursor: default;
+}
+
+/* Custom tab settings */
+/* line 102, ../scss/scss/twitterstats/_custom-styles.scss */
+dl.tabs {
+  border-bottom: 1px solid #DDDDDD;
+  padding-left: 5px;
+}
+
+/* line 107, ../scss/scss/twitterstats/_custom-styles.scss */
+.tabs dd {
+  border: 1px solid #DDDDDD;
+  line-height: 1;
+  margin-left: 5px;
+}
+/* line 111, ../scss/scss/twitterstats/_custom-styles.scss */
+.tabs dd.active {
+  border-bottom-color: white !important;
+}
+
+/* line 118, ../scss/scss/twitterstats/_custom-styles.scss */
+.tabs-content > .content {
+  width: 100%;
+}
+
+/* line 123, ../scss/scss/twitterstats/_custom-styles.scss */
+.table-no-borders {
+  border-collapse: collapse;
+}
+
+/* toggle styling */
+/* line 127, ../scss/scss/twitterstats/_custom-styles.scss */
+.toggle-header {
+  width: 100%;
+  border: 1px solid #cccccc;
+  padding: 10px;
+  margin-bottom: 3px;
+}
+
+/* line 134, ../scss/scss/twitterstats/_custom-styles.scss */
+.toggle-closed:after {
+  content: '\25b8';
+  float: right;
+}
+
+/* line 139, ../scss/scss/twitterstats/_custom-styles.scss */
+.toggle-open:after {
+  content: '\25be';
+  float: right;
+}
+
+/* line 143, ../scss/scss/twitterstats/_custom-styles.scss */
+.toggle-content {
+  margin-top: -3px;
+  border-width: 0px 1px 1px 1px;
+}
+
+/* line 147, ../scss/scss/twitterstats/_custom-styles.scss */
+.toggle-hide {
+  display: none;
+}
+
+/* risk level colours */
+/* line 152, ../scss/scss/twitterstats/_custom-styles.scss */
+.risk-level-1 {
+  color: #B4C152;
+}
+
+/* line 155, ../scss/scss/twitterstats/_custom-styles.scss */
+.risk-level-2 {
+  color: #EF8752;
+}
+
+/* line 158, ../scss/scss/twitterstats/_custom-styles.scss */
+.risk-level-3 {
+  color: #D85B5B;
+}
+
+/* date range header */
+/* line 164, ../scss/scss/twitterstats/_custom-styles.scss */
+.date-range-header {
+  text-align: right;
+}
+
+/* line 168, ../scss/scss/twitterstats/_custom-styles.scss */
+.date-range-header th {
+  vertical-align: middle;
+  border-collapse: collapse;
+  border: 0px;
+}
+
+/* line 177, ../scss/scss/twitterstats/_custom-styles.scss */
+#footer {
+  height: 60px;
+  border-top: 1px solid #cccccc;
+  clear: both;
+  margin-top: 10px;
+}
+
+/* line 183, ../scss/scss/twitterstats/_custom-styles.scss */
+tr {
+  vertical-align: top;
+}
+
+/* table styles*/
+/* line 188, ../scss/scss/twitterstats/_custom-styles.scss */
+.no-borders {
+  border-collapse: collapse;
+  border: 0px;
+}
+
+/* line 192, ../scss/scss/twitterstats/_custom-styles.scss */
+.table-label {
+  font-weight: bold;
+  text-align: right;
+}
+
+/* line 197, ../scss/scss/twitterstats/_custom-styles.scss */
+.span-link {
+  color: #008ac6;
+  line-height: inherit;
+  text-decoration: none;
+}
+
+/* dashboard styles */
+/* line 204, ../scss/scss/twitterstats/_custom-styles.scss */
+.panel {
+  background-color: white;
+  border: 1px solid #999;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+/* line 212, ../scss/scss/twitterstats/_custom-styles.scss */
+.mini-box {
+  min-height: 80px;
+  padding: 10px;
+}
+
+/* line 216, ../scss/scss/twitterstats/_custom-styles.scss */
+.mini-box .box-icon {
+  border-radius: 50%;
+  display: block;
+  float: left;
+  font-size: 25px;
+  height: 40px;
+  line-height: 43px;
+  margin: 0 5px 5px 0;
+  text-align: center;
+  vertical-align: middle;
+  width: 40px;
+}
+
+/* line 228, ../scss/scss/twitterstats/_custom-styles.scss */
+.bg-success {
+  background-color: #abcb00;
+  color: white;
+}
+
+/* line 232, ../scss/scss/twitterstats/_custom-styles.scss */
+.mini-box .box-info p {
+  margin: 0;
+}
+
+/* line 235, ../scss/scss/twitterstats/_custom-styles.scss */
+.size-h2 {
+  font-size: 20px;
+}
+
+/* line 238, ../scss/scss/twitterstats/_custom-styles.scss */
+.bg-info {
+  background-color: #008ac6;
+  color: white;
+}
+
+/* line 243, ../scss/scss/twitterstats/_custom-styles.scss */
+.bg-warning {
+  background-color: #ffb61c;
+  color: white;
+}
+
+/* line 247, ../scss/scss/twitterstats/_custom-styles.scss */
+.bg-danger {
+  background-color: #dc4c4f;
+  color: white;
+}
+
+/* line 252, ../scss/scss/twitterstats/_custom-styles.scss */
+.panel .panel-heading {
+  text-transform: uppercase;
+}
+
+/* line 255, ../scss/scss/twitterstats/_custom-styles.scss */
+.panel-default > .panel-heading {
+  background-color: #f6f6f6;
+  border-color: #e9e9e9;
+  color: #767676;
+}
+
+/* line 260, ../scss/scss/twitterstats/_custom-styles.scss */
+.panel-heading {
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+  padding: 10px 15px;
+}
+
+/* line 267, ../scss/scss/twitterstats/_custom-styles.scss */
+.risk-month-selector {
+  float: right;
+  text-transform: none;
+}
+
+/* line 272, ../scss/scss/twitterstats/_custom-styles.scss */
+.navbar-brand {
+  padding: 0 0 0 5px;
+}
+
+/* line 276, ../scss/scss/twitterstats/_custom-styles.scss */
+#page-wrapper {
+  padding: 10px 20px 20px 20px;
+}
+
+/* line 280, ../scss/scss/twitterstats/_custom-styles.scss */
+.breadcrumb {
+  margin-bottom: 8px;
+}
+
+/* line 284, ../scss/scss/twitterstats/_custom-styles.scss */
+.inputerror {
+  background-color: rgba(198, 15, 19, 0.1);
+  border-color: #c60f13;
+}
+
+/* line 289, ../scss/scss/twitterstats/_custom-styles.scss */
+.form-error-message {
+  color: #c60f13;
+}
+.navbar {
+    margin-top: 0;
+}
+/* for animating scrolls */
+.slide {
+      
+}
+
+.slide.ng-enter {
+    opacity: 0;
+    -webkit-transition:2s linear all;
+    transition:2s linear all;
+}
+
+.slide.ng-enter.ng-enter-active, .slide.ng-leave {
+     opacity: 1;
+}
+
+.slide.ng-leave.ng-leave-active {
+     opacity: 0;
+}

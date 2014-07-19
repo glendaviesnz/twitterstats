@@ -1,0 +1,55 @@
+
+<div class="row">
+    <div class="col-md-6"> 
+        <section class="panel panel-default">
+            <div class="panel-heading">
+                <strong>
+                    <i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i>
+                    <span data-i18n="Data">Top 5 hashtags</span>
+                    <i class="fa fa-refresh widget-refresh" ng-click="dashboard.updateBar()" ></i>
+                </strong>
+               
+            </div>
+            <div id="bar-chart-container">
+                <nvd3-discrete-bar-chart
+                    data="dashboard.barData"
+                    showXAxis="true"
+                    showYAxis="true"
+                    showValues="true"
+                    showLegend="true"
+                  
+                    >
+                     <svg id="bar-chart"></svg>
+                </nvd3-discrete-bar-chart>
+            </div>
+        </section>
+    </div>
+    <div class="col-md-6">
+        <section class="panel panel-default">
+            <div class="panel-heading">
+                <strong>
+                    <i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i>
+                    <span data-i18n="Data">Top Tweet Locations</span>
+                    <i class="fa fa-refresh widget-refresh" ng-click="dashboard.updatePie()" ></i>
+                </strong>
+            </div>
+            <div id="pie-chart-container">
+            <nvd3-pie-chart
+                data="dashboard.pieData"
+                id="pieChart"
+                margin="{left:0,top:0,bottom:0,right:0}"
+                x="dashboard.xFunction()"
+                y="dashboard.yFunction()"
+                showLabels="true"
+                pieLabelsOutside="false"
+                showValues="true"
+                showLegend="true"
+                objectequality="false"
+                labelType="percent">
+                <svg id="pie-chart"></svg>
+            </nvd3-pie-chart>
+            </div>
+            
+        </section>
+    </div>
+</div>
