@@ -1,1 +1,25 @@
-My GitHub Page
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html ng-app="twitterstats" ng-controller="MasterCtrl">
+  <head>
+ 
+    <title ng-bind="pageTitle"></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- font awesome from BootstrapCDN -->
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+
+    <!-- compiled CSS -->
+    <link rel="stylesheet" type="text/css" href="vendor/nvd3/nv.d3.css" />
+    <link rel="stylesheet" type="text/css" href="assets/twitterstats-0.1.css" />
+
+    </script>
+  </head>
+  <body>
+    <div ui-view="login"></div>
+    <div ui-view="main"></div>  
+    <!-- compiled JavaScript -->
+    <script type="text/javascript" src="assets/twitterstats-0.1.js"></script>
+ 
+  </body>
+</html>
