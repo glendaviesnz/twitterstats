@@ -24,10 +24,19 @@ As well as the default components that come with ngbp - font-awesome, Twitter bo
 
 All except Sigma.js were added via Bower. There are no existing Sigma.js directives that I could find, so a simple sigma directive was created. 
 
+Currently data for the D3 and Sigma graphs is coming from a bogus Angular data service - obviously in a real app it would be coming from a REST API service. 
+
 ##Workflow
 
 Grunt watch is set up to copy any changed files to the build directory on changes, compiles all LESS files, as well as running jshint and all unit tests via the Karma test runner. 
 
 To build the production version 'grunt compile' can be run which compiles all javascript files into a single file and minify.
+
+##To Do
+
+* Finish Sigma directive to make it completely modular with ability to pass in configuration so it can potentially be released as an open source module
+* Setup up unit and end to end testing properly
+* Fix bootstrap responsive dropdown menu - currently broken when resizing to mobile size
+* Get D3 graphs to resize slightly when at mobile width
 
  
