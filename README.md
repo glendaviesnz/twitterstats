@@ -9,18 +9,18 @@ This is not intended to be 'yet another' Angular boilerplate/seed project - it i
 
 The project is based on the [ngbp](https://github.com/ngbp) Angular boilerplate project with the following modifications:
 
-..* Added grunt-watch and configured it to add an [IIFE](http://caughtexceptions.blogspot.co.nz/2014/07/angular-module-setup.html) around each module in order to provide better encapsulation
-..* Added Protractor for end to end testing and set config to run .scenario.js files in module directories
-..* Split the main layout from the index.html file into a layout module to allow for easier control of menu setup, etc.
+* Added grunt-watch and configured it to add an [IIFE](http://caughtexceptions.blogspot.co.nz/2014/07/angular-module-setup.html) around each module in order to provide better encapsulation
+* Added Protractor for end to end testing and set config to run .scenario.js files in module directories
+* Split the main layout from the index.html file into a layout module to allow for easier control of menu setup, etc.
 
 ##Components
 
 As well as the default components that come with ngbp - font-awesome, Twitter bootstrap, etc. - also added are:
 
-..* D3
-..* NVD3 
-..* Angular-nvd3-directives
-..* Sigma.js 
+* D3
+* NVD3 
+* Angular-nvd3-directives
+* Sigma.js 
 
 All except Sigma.js were added via Bower. There are no existing Sigma.js directives that I could find, so a simple sigma directive was created. 
 
