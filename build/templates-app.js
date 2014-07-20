@@ -75,6 +75,30 @@ angular.module("dashboard/dashboard.tpl.html", []).run(["$templateCache", functi
     "        </section>\n" +
     "    </div>\n" +
     "</div>\n" +
+    "<section class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-heading\">\n" +
+    "                <strong>\n" +
+    "                    <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
+    "                    <span data-i18n=\"Data\">Tweets per minute for last 60 minutes</span>\n" +
+    "                    \n" +
+    "                </strong>\n" +
+    "               \n" +
+    "            </div>\n" +
+    "            <div id=\"line-chart-container\">\n" +
+    "                <nvd3-line-chart\n" +
+    "            data=\"dashboard.lineData\"\n" +
+    "            id=\"exampleId\"\n" +
+    "            showXAxis=\"true\"\n" +
+    "            showYAxis=\"true\"\n" +
+    "            tooltips=\"true\"\n" +
+    "            interactive=\"true\"\n" +
+    "            objectequality=\"false\"\n" +
+    "            margin=\"{left:50,top:50,bottom:50,right:50}\"\n" +
+    "            >\n" +
+    "        <svg></svg>\n" +
+    "    </nvd3-line-chart>\n" +
+    "            </div>\n" +
+    "        </section>\n" +
     "");
 }]);
 
@@ -176,33 +200,28 @@ angular.module("layout/side-navigation.tpl.html", []).run(["$templateCache", fun
 angular.module("networks/networks.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("networks/networks.tpl.html",
     "\n" +
-    "<div class=\"row\">\n" +
-    "    <div class=\"col-md-6\"> \n" +
-    "        <section class=\"panel panel-default\">\n" +
-    "            <div class=\"panel-heading\">\n" +
-    "                <strong>\n" +
-    "                    <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
-    "                    <span data-i18n=\"Data\">Stuff</span>\n" +
-    "                    <i class=\"fa fa-refresh widget-refresh\" ng-click=\"dashboard.updateBar()\" ></i>\n" +
-    "                </strong>\n" +
-    "               \n" +
-    "            </div>\n" +
-    "            asdad\n" +
-    "        </section>\n" +
-    "    </div>\n" +
-    "    <div class=\"col-md-6\">\n" +
-    "        <section class=\"panel panel-default\">\n" +
-    "            <div class=\"panel-heading\">\n" +
-    "                <strong>\n" +
-    "                    <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
-    "                    <span data-i18n=\"Data\">More stuff</span>\n" +
-    "                    <i class=\"fa fa-refresh widget-refresh\" ng-click=\"dashboard.updatePie()\" ></i>\n" +
-    "                </strong>\n" +
-    "            </div>\n" +
-    "            adadaad\n" +
+    "\n" +
+    "<section class=\"panel panel-default\">\n" +
+    "    <div class=\"panel-heading\">\n" +
+    "        <strong>\n" +
+    "            <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
+    "            <span data-i18n=\"Data\">Network of tweeters for #snowden</span>\n" +
     "            \n" +
-    "        </section>\n" +
+    "        </strong>\n" +
+    "\n" +
     "    </div>\n" +
-    "</div>\n" +
+    "    <div class=\"row\">\n" +
+    "        <div class=\"col-md-6\"> \n" +
+    "            <div id=\"container\"></div>\n" +
+    "\n" +
+    "            <sigma-graph > </sigma-graph>\n" +
+    "        </div>\n" +
+    "        <div class=\"col-md-6\">\n" +
+    "\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "\n" +
+    "</section>\n" +
+    "\n" +
     "");
 }]);

@@ -1,4 +1,4 @@
-angular.module('twitterstats.networks', ['ui.router'])
+angular.module('twitterstats.networks', ['sigmaDirectives'])
 
         .config(function($stateProvider) {
             $stateProvider.state('home.networks', {

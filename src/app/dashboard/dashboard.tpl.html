@@ -53,3 +53,27 @@
         </section>
     </div>
 </div>
+<section class="panel panel-default">
+            <div class="panel-heading">
+                <strong>
+                    <i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i>
+                    <span data-i18n="Data">Tweets per minute for last 60 minutes</span>
+                    
+                </strong>
+               
+            </div>
+            <div id="line-chart-container">
+                <nvd3-line-chart
+            data="dashboard.lineData"
+            id="exampleId"
+            showXAxis="true"
+            showYAxis="true"
+            tooltips="true"
+            interactive="true"
+            objectequality="false"
+            margin="{left:50,top:50,bottom:50,right:50}"
+            >
+        <svg></svg>
+    </nvd3-line-chart>
+            </div>
+        </section>

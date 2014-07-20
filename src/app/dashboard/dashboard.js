@@ -1,4 +1,4 @@
-angular.module('twitterstats.dashboard', ['ui.router', 'nvd3ChartDirectives'])
+angular.module('twitterstats.dashboard', ['nvd3ChartDirectives'])
 
         .config(function($stateProvider) {
             $stateProvider.state('home.dashboard', {
@@ -14,64 +14,24 @@ angular.module('twitterstats.dashboard', ['ui.router', 'nvd3ChartDirectives'])
         })
 
 
-        .controller('DashboardCtrl', [DashboardCtrl]);
+        .controller('DashboardCtrl', ['dataProvider', DashboardCtrl]);
 
-function DashboardCtrl() {
+function DashboardCtrl(dataProvider) {
 
     var vm = this;
-    vm.getPieData = function() {
-        return [
-            {
-                key: "US",
-                y: Math.floor((Math.random() * 10) + 1)
-            },
-            {
-                key: "UK",
-                y: Math.floor((Math.random() * 10) + 1)
-            },
-            {
-                key: "Canada",
-                y: Math.floor((Math.random() * 10) + 1)
-            },
-            {
-                key: "Australia",
-                y: Math.floor((Math.random() * 10) + 1)
-            },
-            {
-                key: "France",
-                y: Math.floor((Math.random() * 10) + 1)
-            },
-            {
-                key: "Germany",
-                y: Math.floor((Math.random() * 10) + 1)
-            }
-        ];
-    };
-    vm.getbarData = function() {
-        return [
-            {
-                key: "Number of tweets in last minute",
-                values: [
-                    ["#ipadgames", Math.floor((Math.random() * 10000) + 1000)],
-                    ["#worldcup", Math.floor((Math.random() * 10000) + 1000)],
-                    ["#ukraine", Math.floor((Math.random() * 10000) + 1000)],
-                    ["#mileycyrus", Math.floor((Math.random() * 10000) + 1000)],
-                    ["#isis", Math.floor((Math.random() * 10000) + 1000)]
-                ]
-            }
-        ];
-    };
+    vm.lineData = dataProvider.getLineData();
 
-    vm.barData = vm.getbarData();
+    vm.barData = dataProvider.getBarData();
 
-    vm.pieData = vm.getPieData();
+    vm.pieData = dataProvider.getPieData();
 
     vm.updatePie = function() {
-        vm.pieData = vm.getPieData();
+        vm.pieData = dataProvider.getPieData();
     };
     vm.updateBar = function() {
-        vm.barData = vm.getbarData();
+        vm.barData = dataProvider.getBarData();
     };
+
     vm.xFunction = function() {
         return function(d) {
             return d.key;
