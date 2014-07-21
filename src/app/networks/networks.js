@@ -14,10 +14,10 @@ angular.module('twitterstats.networks', ['sigmaDirectives'])
         })
 
 
-        .controller('NetworksCtrl', [NetworksCtrl]);
+        .controller('NetworksCtrl', ['dataProvider', NetworksCtrl]);
 
-function NetworksCtrl() {
-
-
+function NetworksCtrl( dataProvider) {
+    var vm = this;
+    vm.networkData = dataProvider.getNetworkData();
 
 }

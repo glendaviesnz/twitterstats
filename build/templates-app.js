@@ -212,9 +212,9 @@ angular.module("networks/networks.tpl.html", []).run(["$templateCache", function
     "    </div>\n" +
     "    <div class=\"row\">\n" +
     "        <div class=\"col-md-6\"> \n" +
-    "            <div id=\"container\"></div>\n" +
+    "            <div id=\"container\" ></div>\n" +
     "\n" +
-    "            <sigma-graph > </sigma-graph>\n" +
+    "            <div sigma-graph graph-data=\"api\" network-data=\"networks.networkData\" graph-container=\"container\"> </div>\n" +
     "        </div>\n" +
     "        <div class=\"col-md-6\">\n" +
     "\n" +
