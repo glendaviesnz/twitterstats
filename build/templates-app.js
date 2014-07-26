@@ -206,7 +206,7 @@ angular.module("networks/networks.tpl.html", []).run(["$templateCache", function
     "        <strong>\n" +
     "            <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
     "            <span data-i18n=\"Data\">Network of tweeters for #snowden</span>\n" +
-    "            \n" +
+    "\n" +
     "        </strong>\n" +
     "\n" +
     "    </div>\n" +
@@ -214,10 +214,23 @@ angular.module("networks/networks.tpl.html", []).run(["$templateCache", function
     "        <div class=\"col-md-6\"> \n" +
     "            <div id=\"container\" ></div>\n" +
     "\n" +
-    "            <div sigma-graph graph-data=\"api\" network-data=\"networks.networkData\" graph-container=\"container\"> </div>\n" +
+    "            <div sigma-graph graph-data=\"api\" network-data=\"networks.networkData\" tweeter=\"networks.tweeter\" graph-container=\"container\"> </div>\n" +
     "        </div>\n" +
-    "        <div class=\"col-md-6\">\n" +
-    "\n" +
+    "        <div class=\"col-md-6 detail-panel\" >\n" +
+    "             \n" +
+    "            <p>Select a node to view tweeter details</p>\n" +
+    "            <div ng-hide=\"networks.tweeter.hideProfile\" class=\"tweeter-profile profile-fadein\" >\n" +
+    "                <div>\n" +
+    "                <img src=\"{{ networks.tweeter.profilePic}}\" width=\"50px\" height=\"50px \"/> {{ networks.tweeter.handle }}\n" +
+    "                </div>\n" +
+    "                <div class=\"tweeter-stats\">\n" +
+    "                <strong>Tweets: </strong>{{ networks.tweeter.tweets }} \n" +
+    "                <strong>Followers: </strong>{{ networks.tweeter.followers }}\n" +
+    "                <strong>Following: </strong>{{ networks.tweeter.following }}\n" +
+    "                </div>\n" +
+    "            </div>\n" +
+    "                \n" +
+    "            \n" +
     "        </div>\n" +
     "    </div>\n" +
     "\n" +

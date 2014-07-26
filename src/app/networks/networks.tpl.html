@@ -5,7 +5,7 @@
         <strong>
             <i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i>
             <span data-i18n="Data">Network of tweeters for #snowden</span>
-            
+
         </strong>
 
     </div>
@@ -13,10 +13,23 @@
         <div class="col-md-6"> 
             <div id="container" ></div>
 
-            <div sigma-graph graph-data="api" network-data="networks.networkData" graph-container="container"> </div>
+            <div sigma-graph graph-data="api" network-data="networks.networkData" tweeter="networks.tweeter" graph-container="container"> </div>
         </div>
-        <div class="col-md-6">
-
+        <div class="col-md-6 detail-panel" >
+             
+            <p>Select a node to view tweeter details</p>
+            <div ng-hide="networks.tweeter.hideProfile" class="tweeter-profile profile-fadein" >
+                <div>
+                <img src="{{ networks.tweeter.profilePic}}" width="50px" height="50px "/> {{ networks.tweeter.handle }}
+                </div>
+                <div class="tweeter-stats">
+                <strong>Tweets: </strong>{{ networks.tweeter.tweets }} 
+                <strong>Followers: </strong>{{ networks.tweeter.followers }}
+                <strong>Following: </strong>{{ networks.tweeter.following }}
+                </div>
+            </div>
+                
+            
         </div>
     </div>
 

@@ -17,22 +17,22 @@ angular.module('twitterstats.dashboard', ['nvd3ChartDirectives'])
         })
 
 
-        .controller('DashboardCtrl', ['dataProvider', DashboardCtrl]);
+        .controller('DashboardCtrl', ['dataService', DashboardCtrl]);
 
-function DashboardCtrl(dataProvider) {
+function DashboardCtrl(dataService) {
 
     var vm = this;
-    vm.lineData = dataProvider.getLineData();
+    vm.lineData = dataService.getLineData();
 
-    vm.barData = dataProvider.getBarData();
+    vm.barData = dataService.getBarData();
 
-    vm.pieData = dataProvider.getPieData();
+    vm.pieData = dataService.getPieData();
 
     vm.updatePie = function() {
-        vm.pieData = dataProvider.getPieData();
+        vm.pieData = dataService.getPieData();
     };
     vm.updateBar = function() {
-        vm.barData = dataProvider.getBarData();
+        vm.barData = dataService.getBarData();
     };
 
     vm.xFunction = function() {

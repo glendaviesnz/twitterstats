@@ -1,6 +1,37 @@
 #container {
     max-width: 500px;
-    height: 500px;
+    height: 450px;
     display: block;
     margin: 0 auto;
+}
+
+.detail-panel {
+    padding:20px;
+}
+
+.tweeter-stats {
+    margin-top:15px;
+}
+
+.tweeter-profile {
+    border: 1px solid #cccccc;
+    width: 80%;
+    padding :20px;
+}
+
+
+/* for animating profile change */
+
+.profile-fadein.ng-hide-add,
+.profile-fadein.ng-hide-remove
+{
+   -webkit-transition:0.5s linear all;
+  transition:2s linear all;
+  display:block!important;
+  opacity:1;
+}
+
+.profile-fadein.ng-hide {
+  opacity: 0;
+
 }

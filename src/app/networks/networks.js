@@ -1,4 +1,4 @@
-angular.module('twitterstats.networks', ['sigmaDirectives'])
+angular.module('twitterstats.networks', ['sigmaDirectives','ngAnimate'])
 
         .config(function($stateProvider) {
             $stateProvider.state('home.networks', {
@@ -14,10 +14,11 @@ angular.module('twitterstats.networks', ['sigmaDirectives'])
         })
 
 
-        .controller('NetworksCtrl', ['dataProvider', NetworksCtrl]);
+        .controller('NetworksCtrl', ['dataService', NetworksCtrl]);
 
-function NetworksCtrl( dataProvider) {
+function NetworksCtrl( dataService) {
     var vm = this;
-    vm.networkData = dataProvider.getNetworkData();
+    vm.tweeter = { handle: '', profilePic: '', hideProfile: true, followers: 0, following: 0, tweets: 0 };
+    vm.networkData = dataService.getNetworkData();
 
 }
