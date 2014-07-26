@@ -1,7 +1,7 @@
 (function () {
  'use strict';
 
-angular.module('twitterstats.dashboard', ['nvd3ChartDirectives'])
+angular.module('twitterstats.dashboard', ['ui.router', 'nvd3ChartDirectives'])
 
         .config(function($stateProvider) {
             $stateProvider.state('home.dashboard', {
@@ -15,8 +15,7 @@ angular.module('twitterstats.dashboard', ['nvd3ChartDirectives'])
                 data: {pageTitle: 'Dashboard'}
             });
         })
-
-
+        
         .controller('DashboardCtrl', ['dataService', DashboardCtrl]);
 
 function DashboardCtrl(dataService) {
@@ -45,7 +44,6 @@ function DashboardCtrl(dataService) {
             return d.y;
         };
     };
-
 
 }
 

@@ -63,9 +63,10 @@ angular.module('sigmaDirectives', [])
                     function clickNode(e) {
 
                         scope.$apply(function() {
+                            scope.tweeter.hideProfile = true;
                             scope.tweeter = dataService.getRandomProfileDetails();
                             scope.tweeter.handle = e.data.node.label;
-                            scope.tweeter.showProfile = true;
+                            scope.tweeter.hideProfile = false;
 
                         
                         });
