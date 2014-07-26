@@ -30,6 +30,8 @@ Currently data for the D3 and Sigma graphs is coming from a bogus Angular data s
 
 Grunt watch is set up to copy any changed files to the build directory on changes, compiles all LESS files, as well as running jshint and all unit tests via the Karma test runner. 
 
+The unit test and scenario tests files are obviously very basic at this stage as not a lot to test.
+
 To build the production version 'grunt compile' can be run which compiles all javascript files into a single file and minify.
 
 ##To Do
