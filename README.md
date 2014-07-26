@@ -22,7 +22,7 @@ As well as the default components that come with ngbp - font-awesome, Twitter bo
 * Angular-nvd3-directives
 * Sigma.js 
 
-All except Sigma.js were added via Bower. There are no existing Sigma.js directives that I could find, so a simple sigma directive was created. 
+All except Sigma.js were added via Bower. There are no existing Sigma.js directives that I could find, so a simple sigma directive was created. Thanks to the magic of javascript closures it was possible to push the directives isolated scope into the sigma.js onClick binding, which then allowed the node click event to update the Angular model data binding - [more details about this on my blog](http://caughtexceptions.blogspot.co.nz/2014/07/getting-angular-scope-variable-into.html).
 
 Currently data for the D3 and Sigma graphs is coming from a bogus Angular data service - obviously in a real app it would be coming from a REST API service. 
 
