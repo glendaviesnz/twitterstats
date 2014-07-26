@@ -1,16 +1,14 @@
-var TwitterstatsLoginPage = function() {
-  this.nameInput = element(by.id('login-button'));
-
-  this.get = function() {
-    browser.get('http://dev.twitterstats.com/#/login');
-  };
-
-};
-
 describe('twitterstats login page', function() {
-  it('should have login button', function() {
-    var twitterstatsLoginPage = new TwitterstatsLoginPage();
-    twitterstatsLoginPage.get();
-    expect(twitterstatsLoginPage.nameInput.getText()).toEqual('Login with google');
-  });
+    
+    beforeEach(function() {
+        browser.get('http://dev.twitterstats.com/#/login');
+    });
+    
+    it('should have login button', function() {
+
+        expect(element(by.id('login-button')).getText()).toEqual('Login with google');
+        element(by.id('login-button')).click();
+
+    });
+
 });
