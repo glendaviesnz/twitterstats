@@ -11,6 +11,7 @@ angular.module('twitterstats', [
     'twitterstats.login',
     'twitterstats.dashboard',
     'twitterstats.networks',
+    'twitterstats.charts',
     'ui.router'
 ])
         .config(function($urlRouterProvider) {

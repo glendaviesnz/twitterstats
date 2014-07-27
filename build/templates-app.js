@@ -1,4 +1,4 @@
-angular.module('templates-app', ['auth/login.tpl.html', 'dashboard/dashboard.tpl.html', 'layout/main.tpl.html', 'layout/side-navigation.tpl.html', 'networks/networks.tpl.html']);
+angular.module('templates-app', ['auth/login.tpl.html', 'charts/charts.tpl.html', 'dashboard/dashboard.tpl.html', 'layout/main.tpl.html', 'layout/side-navigation.tpl.html', 'networks/networks.tpl.html']);
 
 angular.module("auth/login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("auth/login.tpl.html",
@@ -14,6 +14,52 @@ angular.module("auth/login.tpl.html", []).run(["$templateCache", function($templ
     "        <div ng-click=\"login.oauth()\" id=\"login-button\" class=\"btn btn-default\">Login with google</div>\n" +
     "        {{ login.message}}\n" +
     "        </div>\n" +
+    "    </div>\n" +
+    "</div>");
+}]);
+
+angular.module("charts/charts.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("charts/charts.tpl.html",
+    "<div class=\"row\">\n" +
+    "    <div class=\"col-md-6\"> \n" +
+    "        <section class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-heading\">\n" +
+    "                <strong>\n" +
+    "                    <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
+    "                    <span data-i18n=\"Data\">Chart data</span>\n" +
+    "                    \n" +
+    "                </strong>\n" +
+    "               \n" +
+    "            </div>\n" +
+    "            <input type=\"text\" ng-model=\"charts.test\" />\n" +
+    "            <input type=\"text\" ng-model=\"charts.test2\" />\n" +
+    "            \n" +
+    "            <div ng-click=\"charts.updateChart()\">Update it</div>\n" +
+    "        </section>\n" +
+    "    </div>\n" +
+    "    <div class=\"col-md-6\">\n" +
+    "        <section class=\"panel panel-default\">\n" +
+    "            <div class=\"panel-heading\">\n" +
+    "                <strong>\n" +
+    "                    <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
+    "                    <span data-i18n=\"Data\">Chart</span>\n" +
+    "                    \n" +
+    "                </strong>\n" +
+    "            </div>\n" +
+    "            <div id=\"chart-container\">\n" +
+    "            <nvd3-discrete-bar-chart\n" +
+    "                    data=\"charts.chartData\"\n" +
+    "                    showXAxis=\"true\"\n" +
+    "                    showYAxis=\"true\"\n" +
+    "                    showValues=\"true\"\n" +
+    "                    showLegend=\"true\"\n" +
+    "                    objectequality=\"false\"\n" +
+    "                    >\n" +
+    "                     <svg id=\"bar-chart\"></svg>\n" +
+    "                </nvd3-discrete-bar-chart>\n" +
+    "            </div>\n" +
+    "            \n" +
+    "        </section>\n" +
     "    </div>\n" +
     "</div>");
 }]);
@@ -173,7 +219,10 @@ angular.module("layout/side-navigation.tpl.html", []).run(["$templateCache", fun
     "\n" +
     "                <a ui-sref=\"home.networks\"><i class=\"fa fa-users\"></i> Networks</a></li>\n" +
     "            \n" +
+    "<li\n" +
+    "                class=\"\" > \n" +
     "\n" +
+    "                <a ui-sref=\"home.charts\"><i class=\"fa fa-bar-chart-o\"></i> Chart maker</a></li>\n" +
     "\n" +
     "        </ul>\n" +
     "\n" +
@@ -217,20 +266,28 @@ angular.module("networks/networks.tpl.html", []).run(["$templateCache", function
     "            <div sigma-graph graph-data=\"api\" network-data=\"networks.networkData\" tweeter=\"networks.tweeter\" graph-container=\"container\"> </div>\n" +
     "        </div>\n" +
     "        <div class=\"col-md-6 detail-panel\" >\n" +
-    "             \n" +
+    "\n" +
     "            <p>Select a node to view tweeter details</p>\n" +
     "            <div ng-hide=\"networks.tweeter.hideProfile\" class=\"tweeter-profile profile-fadein\" >\n" +
     "                <div>\n" +
-    "                <img src=\"{{ networks.tweeter.profilePic}}\" width=\"50px\" height=\"50px \"/> {{ networks.tweeter.handle }}\n" +
+    "                    <img src=\"{{ networks.tweeter.profilePic}}\" width=\"50px\" height=\"50px \"/> {{ networks.tweeter.handle}}\n" +
     "                </div>\n" +
     "                <div class=\"tweeter-stats\">\n" +
-    "                <strong>Tweets: </strong>{{ networks.tweeter.tweets }} \n" +
-    "                <strong>Followers: </strong>{{ networks.tweeter.followers }}\n" +
-    "                <strong>Following: </strong>{{ networks.tweeter.following }}\n" +
+    "                    <div class=\"row\">\n" +
+    "                        <div class=\"col-md-4\"> \n" +
+    "                            <strong>Tweets: </strong>{{ networks.tweeter.tweets}} \n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-md-4\">\n" +
+    "                            <strong>Followers: </strong>{{ networks.tweeter.followers}}\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-md-4\">\n" +
+    "                            <strong>Following: </strong>{{ networks.tweeter.following}}\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
     "                </div>\n" +
     "            </div>\n" +
-    "                \n" +
-    "            \n" +
+    "\n" +
+    "\n" +
     "        </div>\n" +
     "    </div>\n" +
     "\n" +

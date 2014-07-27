@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-6"> 
+        <section class="panel panel-default">
+            <div class="panel-heading">
+                <strong>
+                    <i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i>
+                    <span data-i18n="Data">Chart data</span>
+                    
+                </strong>
+               
+            </div>
+            <input type="text" ng-model="charts.test" />
+            <input type="text" ng-model="charts.test2" />
+            
+            <div ng-click="charts.updateChart()">Update it</div>
+        </section>
+    </div>
+    <div class="col-md-6">
+        <section class="panel panel-default">
+            <div class="panel-heading">
+                <strong>
+                    <i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i>
+                    <span data-i18n="Data">Chart</span>
+                    
+                </strong>
+            </div>
+            <div id="chart-container">
+            <nvd3-discrete-bar-chart
+                    data="charts.chartData"
+                    showXAxis="true"
+                    showYAxis="true"
+                    showValues="true"
+                    showLegend="true"
+                    objectequality="false"
+                    >
+                     <svg id="bar-chart"></svg>
+                </nvd3-discrete-bar-chart>
+            </div>
+            
+        </section>
+    </div>
+</div>
