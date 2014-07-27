@@ -32,12 +32,12 @@ Grunt watch is set up to copy any changed files to the build directory on change
 
 The unit test and scenario tests files are obviously very basic at this stage as not a lot to test.
 
-To build the production version 'grunt compile' can be run which compiles all javascript files into a single file and minify.
+To build the production version 'grunt compile' can be run which compiles all javascript files into a single file and minifies.
 
 ##To Do
 
 * Finish Sigma directive to make it completely modular with ability to pass in configuration so it can potentially be released as an open source module
-* Setup up unit and end to end testing properly
+* ~~Setup up unit and end to end testing properly~~
 * Fix bootstrap responsive dropdown menu - currently broken when resizing to mobile size
 * Get D3 graphs to resize slightly when at mobile width
 
