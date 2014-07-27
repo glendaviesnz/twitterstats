@@ -5867,6 +5867,9 @@ h2 {
 .footer .social li a:visited:hover {
   color: #555555;
 }
+.vcenter {
+  vertical-align: middle;
+}
 /**
  * Now that all app-wide styles have been applied, we can load the styles for
  * all the submodules and components we are using. 
@@ -6211,4 +6214,16 @@ li.current a {
   height: 450px;
   display: block;
   margin: 0 auto;
+}
+.chart-data-box {
+  padding: 15px;
+}
+.label-cell {
+  padding-top: 7px;
+}
+.chart-entry-row {
+  margin-bottom: 10px;
+}
+.add-item-button {
+  margin-left: 25px;
 }

@@ -72,7 +72,8 @@ module.exports = {
       'vendor/sigma/sigma.min.js',
       'vendor/sigma/plugins/sigma.parsers.json.min.js',
       'vendor/sigma/plugins/sigma.plugins.dragNodes.min.js',
-      'vendor/sigma/plugins/sigma.layout.forceAtlas2.min.js'
+      'vendor/sigma/plugins/sigma.layout.forceAtlas2.min.js',
+      'vendor/lodash/lodash.js'
     ],
     css: [
         'vendor/nvd3/nv.d3.css'

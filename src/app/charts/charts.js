@@ -13,29 +13,55 @@ angular.module('twitterstats.charts', ['ui.router', 'nvd3ChartDirectives'])
             });
         })
 
-
         .controller('ChartsCtrl', [ChartsCtrl]);
 
 function ChartsCtrl() {
+
     var vm = this;
-    vm.chartData = {};
-    vm.test = 'bob';
-    vm.test2 = 9;
+    vm.chartEntries = [{item: '#cars', value: 600}, {item: '#balloons', value: 800}];
+
+
     vm.updateChartData = function() {
+
+        var valuesArray = [];
+
+        vm.chartEntries.forEach(function(entry) {
+            valuesArray.push(_.toArray(entry));
+        });
+
         return [
-                    {
-                        key: "Number of tweets in last minute",
-                        values: [
-                            [vm.test, 7],
-                            ["henry", 8],
-                            ["james", 9]
-                        ]
-                    }
-                ];
+            {
+                key: "My custom chart",
+                values: valuesArray
+            }
+        ];
     };
 
-    vm.updateChart = function() {
-        vm.chartData = vm.updateChartData();
-        console.log(vm.chartData);
+    vm.chartData = vm.updateChartData();
+
+    vm.addItem = function() {
+
+        vm.chartEntries.push({item: '', value: 0});
+
+    };
+
+    vm.removeItem = function(index) {
+
+        vm.chartEntries.splice(index, 1);
+
+    };
+
+    vm.updateChart = function(form) {
+
+        if (form.$valid ) {
+            
+            vm.chartData = vm.updateChartData();
+            
+        } else {
+            
+            vm.addErrors = true;
+            
+        }
+        
     };
 }

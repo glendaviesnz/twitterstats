@@ -5,14 +5,37 @@
                 <strong>
                     <i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i>
                     <span data-i18n="Data">Chart data</span>
-                    
+
                 </strong>
-               
+
             </div>
-            <input type="text" ng-model="charts.test" />
-            <input type="text" ng-model="charts.test2" />
-            
-            <div ng-click="charts.updateChart()">Update it</div>
+            <div class="chart-data-box">
+                <form id="itemInput"  ng-submit ="charts.updateChart(entryInput)" name="entryInput" novalidate>
+                <div ng-repeat="entry in charts.chartEntries" data-ng-form="subForm">
+                    <div class="row chart-entry-row ">
+                        <div class="col-sm-2 text-right label-cell">Item</div>
+                        <div class="col-sm-4">
+
+                            <input name="item" type="text" ng-model="entry.item" class="form-control" required ng-class="{ inputerror: charts.addErrors && subForm.item.$invalid }" />
+                            <span class="e form-error-message" ng-show="charts.addErrors && subForm.item.$invalid">Please enter an item name</span>
+                        </div>
+                        <div class="col-sm-2 text-right label-cell">Value</div>
+                        <div class="col-sm-3">
+                            <input type="number" name="value" ng-model="entry.value" class="form-control" required ng-class="{ inputerror: charts.addErrors && subForm.value.$invalid }"  />
+                            <span class="e form-error-message" ng-show="charts.addErrors && subForm.value.$invalid">Please enter a number</span>
+
+                        </div>
+                        <div class="col-sm-1 label-cell">
+                            <span ng-show="$index > 1" ng-click="charts.removeItem($index)"> <i class="fa fa-minus" ></i></span>
+                        </div>
+                    </div>
+                </div>
+                <br /><span class="btn btn-default add-item-button " ng-click="charts.addItem()" >Add item</span>
+                <button class="btn btn-default update-chart-button"  >Update chart</button>
+                </form>
+                
+
+            </div>
         </section>
     </div>
     <div class="col-md-6">
@@ -21,11 +44,11 @@
                 <strong>
                     <i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i><i class="fa fa-ellipsis-v dashboard-panel-icon"></i>
                     <span data-i18n="Data">Chart</span>
-                    
+
                 </strong>
             </div>
             <div id="chart-container">
-            <nvd3-discrete-bar-chart
+                <nvd3-discrete-bar-chart
                     data="charts.chartData"
                     showXAxis="true"
                     showYAxis="true"
@@ -33,10 +56,10 @@
                     showLegend="true"
                     objectequality="false"
                     >
-                     <svg id="bar-chart"></svg>
+                    <svg id="bar-chart"></svg>
                 </nvd3-discrete-bar-chart>
             </div>
-            
+
         </section>
     </div>
 </div>

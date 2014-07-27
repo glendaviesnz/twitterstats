@@ -27,14 +27,37 @@ angular.module("charts/charts.tpl.html", []).run(["$templateCache", function($te
     "                <strong>\n" +
     "                    <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
     "                    <span data-i18n=\"Data\">Chart data</span>\n" +
-    "                    \n" +
+    "\n" +
     "                </strong>\n" +
-    "               \n" +
+    "\n" +
     "            </div>\n" +
-    "            <input type=\"text\" ng-model=\"charts.test\" />\n" +
-    "            <input type=\"text\" ng-model=\"charts.test2\" />\n" +
-    "            \n" +
-    "            <div ng-click=\"charts.updateChart()\">Update it</div>\n" +
+    "            <div class=\"chart-data-box\">\n" +
+    "                <form id=\"itemInput\"  ng-submit =\"charts.updateChart(entryInput)\" name=\"entryInput\" novalidate>\n" +
+    "                <div ng-repeat=\"entry in charts.chartEntries\" data-ng-form=\"subForm\">\n" +
+    "                    <div class=\"row chart-entry-row \">\n" +
+    "                        <div class=\"col-sm-2 text-right label-cell\">Item</div>\n" +
+    "                        <div class=\"col-sm-4\">\n" +
+    "\n" +
+    "                            <input name=\"item\" type=\"text\" ng-model=\"entry.item\" class=\"form-control\" required ng-class=\"{ inputerror: charts.addErrors && subForm.item.$invalid }\" />\n" +
+    "                            <span class=\"e form-error-message\" ng-show=\"charts.addErrors && subForm.item.$invalid\">Please enter an item name</span>\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-sm-2 text-right label-cell\">Value</div>\n" +
+    "                        <div class=\"col-sm-3\">\n" +
+    "                            <input type=\"number\" name=\"value\" ng-model=\"entry.value\" class=\"form-control\" required ng-class=\"{ inputerror: charts.addErrors && subForm.value.$invalid }\"  />\n" +
+    "                            <span class=\"e form-error-message\" ng-show=\"charts.addErrors && subForm.value.$invalid\">Please enter a number</span>\n" +
+    "\n" +
+    "                        </div>\n" +
+    "                        <div class=\"col-sm-1 label-cell\">\n" +
+    "                            <span ng-show=\"$index > 1\" ng-click=\"charts.removeItem($index)\"> <i class=\"fa fa-minus\" ></i></span>\n" +
+    "                        </div>\n" +
+    "                    </div>\n" +
+    "                </div>\n" +
+    "                <br /><span class=\"btn btn-default add-item-button \" ng-click=\"charts.addItem()\" >Add item</span>\n" +
+    "                <button class=\"btn btn-default update-chart-button\"  >Update chart</button>\n" +
+    "                </form>\n" +
+    "                \n" +
+    "\n" +
+    "            </div>\n" +
     "        </section>\n" +
     "    </div>\n" +
     "    <div class=\"col-md-6\">\n" +
@@ -43,11 +66,11 @@ angular.module("charts/charts.tpl.html", []).run(["$templateCache", function($te
     "                <strong>\n" +
     "                    <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
     "                    <span data-i18n=\"Data\">Chart</span>\n" +
-    "                    \n" +
+    "\n" +
     "                </strong>\n" +
     "            </div>\n" +
     "            <div id=\"chart-container\">\n" +
-    "            <nvd3-discrete-bar-chart\n" +
+    "                <nvd3-discrete-bar-chart\n" +
     "                    data=\"charts.chartData\"\n" +
     "                    showXAxis=\"true\"\n" +
     "                    showYAxis=\"true\"\n" +
@@ -55,10 +78,10 @@ angular.module("charts/charts.tpl.html", []).run(["$templateCache", function($te
     "                    showLegend=\"true\"\n" +
     "                    objectequality=\"false\"\n" +
     "                    >\n" +
-    "                     <svg id=\"bar-chart\"></svg>\n" +
+    "                    <svg id=\"bar-chart\"></svg>\n" +
     "                </nvd3-discrete-bar-chart>\n" +
     "            </div>\n" +
-    "            \n" +
+    "\n" +
     "        </section>\n" +
     "    </div>\n" +
     "</div>");
@@ -274,13 +297,13 @@ angular.module("networks/networks.tpl.html", []).run(["$templateCache", function
     "                </div>\n" +
     "                <div class=\"tweeter-stats\">\n" +
     "                    <div class=\"row\">\n" +
-    "                        <div class=\"col-md-4\"> \n" +
+    "                        <div class=\"col-sm-4\"> \n" +
     "                            <strong>Tweets: </strong>{{ networks.tweeter.tweets}} \n" +
     "                        </div>\n" +
-    "                        <div class=\"col-md-4\">\n" +
+    "                        <div class=\"col-sm-4\">\n" +
     "                            <strong>Followers: </strong>{{ networks.tweeter.followers}}\n" +
     "                        </div>\n" +
-    "                        <div class=\"col-md-4\">\n" +
+    "                        <div class=\"col-sm-4\">\n" +
     "                            <strong>Following: </strong>{{ networks.tweeter.following}}\n" +
     "                        </div>\n" +
     "                    </div>\n" +
