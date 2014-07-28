@@ -12,14 +12,16 @@ angular.module('twitterstats', [
     'ui.router'
 ])
         .config(function($urlRouterProvider) {
-            $urlRouterProvider.otherwise('/');
+            // when there is an empty route, redirect to /dashboard   
+            $urlRouterProvider.when('', '/dashboard');
+            
         })
 
         .controller('MasterCtrl', ['$scope', 'authenticationService', MasterCtrl]);
-        
+
 
 function MasterCtrl($scope, authenticationService) {
- 
+
     $scope.$on('$stateChangeSuccess', function(event, toState) {
         if (angular.isDefined(toState.data.pageTitle)) {
             $scope.pageTitle = toState.data.pageTitle + ' | twitterstats';
