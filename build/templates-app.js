@@ -220,7 +220,7 @@ angular.module("layout/side-navigation.tpl.html", []).run(["$templateCache", fun
     "<nav class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">\n" +
     "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
     "    <div class=\"navbar-header\">\n" +
-    "        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\">\n" +
+    "        <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\".navbar-ex1-collapse\" ng-init=\"navCollapsed = true\" ng-click=\"navCollapsed = !navCollapsed\">\n" +
     "            <span class=\"sr-only\">Toggle navigation</span>\n" +
     "            <span class=\"icon-bar\"></span>\n" +
     "            <span class=\"icon-bar\"></span>\n" +
@@ -230,7 +230,7 @@ angular.module("layout/side-navigation.tpl.html", []).run(["$templateCache", fun
     "    </div>\n" +
     "\n" +
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
-    "    <div class=\"collapse navbar-collapse navbar-ex1-collapse\">\n" +
+    "    <div class=\"collapse navbar-collapse navbar-ex1-collapse\" ng-class=\"{'in':!navCollapsed}\" ng-click=\"navCollapsed=true\">\n" +
     "        <ul class=\"nav navbar-nav side-nav\">\n" +
     "            <li \n" +
     "                class=\"\" >\n" +

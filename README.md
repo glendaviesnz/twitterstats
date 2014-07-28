@@ -38,7 +38,7 @@ To build the production version 'grunt compile' can be run which compiles all ja
 
 * Finish Sigma directive to make it completely modular with ability to pass in configuration so it can potentially be released as an open source module
 * ~~Setup up unit and end to end testing properly~~
-* Fix bootstrap responsive dropdown menu - currently broken when resizing to mobile size
+* ~~Fix bootstrap responsive dropdown menu - currently broken when resizing to mobile size~~
 * Get D3 graphs to resize slightly when at mobile width
 * Fix issue with dashboard graphs not displaying on first load if returning to an already logged in sessions
 

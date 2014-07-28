@@ -1,6 +1,7 @@
 (function () {
-  'use strict';
-  angular.module('twitterstats', [
+ 'use strict';
+
+angular.module('twitterstats', [
     'ngAnimate',
     'common',
     'authentication',
@@ -12,24 +13,24 @@
     'twitterstats.networks',
     'twitterstats.charts',
     'ui.router'
-  ]).config([
-    '$urlRouterProvider',
-    function ($urlRouterProvider) {
-      $urlRouterProvider.otherwise('/');
-    }
-  ]).controller('MasterCtrl', [
-    '$scope',
-    'authenticationService',
-    MasterCtrl
-  ]);
-  function MasterCtrl($scope, authenticationService) {
-    $scope.$on('$stateChangeSuccess', function (event, toState) {
-      if (angular.isDefined(toState.data.pageTitle)) {
-        $scope.pageTitle = toState.data.pageTitle + ' | twitterstats';
-      }
+])
+        .config(function($urlRouterProvider) {
+            $urlRouterProvider.otherwise('/');
+        })
+
+        .controller('MasterCtrl', ['$scope', 'authenticationService', MasterCtrl]);
+        
+
+function MasterCtrl($scope, authenticationService) {
+ 
+    $scope.$on('$stateChangeSuccess', function(event, toState) {
+        if (angular.isDefined(toState.data.pageTitle)) {
+            $scope.pageTitle = toState.data.pageTitle + ' | twitterstats';
+        }
     });
-    $scope.logout = function () {
-      authenticationService.logout();
+    $scope.logout = function() {
+        authenticationService.logout();
     };
-  }
-}());
+}
+
+})();
