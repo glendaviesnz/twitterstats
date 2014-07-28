@@ -108,7 +108,7 @@ angular.module("dashboard/dashboard.tpl.html", []).run(["$templateCache", functi
     "                    showYAxis=\"true\"\n" +
     "                    showValues=\"true\"\n" +
     "                    showLegend=\"true\"\n" +
-    "                  \n" +
+    "                 \n" +
     "                    >\n" +
     "                     <svg id=\"bar-chart\"></svg>\n" +
     "                </nvd3-discrete-bar-chart>\n" +
