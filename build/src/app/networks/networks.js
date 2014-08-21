@@ -1,5 +1,3 @@
-(function () {
- 'use strict';
 
 angular.module('twitterstats.networks', ['ui.router','sigmaDirectives','ngAnimate'])
 
@@ -24,5 +22,3 @@ function NetworksCtrl(dataService) {
     vm.tweeter = { handle: '', profilePic: '', hideProfile: true, followers: 0, following: 0, tweets: 0 };
     vm.networkData = dataService.getNetworkData();
 }
-
-})();

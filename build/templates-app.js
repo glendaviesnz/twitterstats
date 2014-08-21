@@ -20,7 +20,7 @@ angular.module("auth/login.tpl.html", []).run(["$templateCache", function($templ
 
 angular.module("charts/charts.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("charts/charts.tpl.html",
-    "<div class=\"row\">\n" +
+    "<div class=\"row\" >\n" +
     "    <div class=\"col-md-6\"> \n" +
     "        <section class=\"panel panel-default\">\n" +
     "            <div class=\"panel-heading\">\n" +

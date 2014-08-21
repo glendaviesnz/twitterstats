@@ -98,7 +98,8 @@ module.exports = function ( grunt ) {
             src: [ '<%= app_files.js %>' ],
             dest: '<%= build_dir %>/',
             options: {
-                wrapper: ['(function () {\n \'use strict\';\n', '\n})();']
+                //wrapper: ['(function () {\n \'use strict\';\n', '\n})();']
+                wrapper: ['', '']
             }
         }
     },

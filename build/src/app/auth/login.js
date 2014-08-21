@@ -1,5 +1,3 @@
-(function () {
- 'use strict';
 
 angular.module('twitterstats.login', ['ui.router'])
 
@@ -27,5 +25,3 @@ function LoginCtrl(authenticationService) {
     };
 
 }
-
-})();

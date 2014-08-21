@@ -1,9 +1,8 @@
-(function () {
- 'use strict';
 
 angular.module('twitterstats.charts', ['ui.router', 'nvd3ChartDirectives'])
 
         .config(function($stateProvider) {
+
             $stateProvider.state('home.charts', {
                 url: 'charts',
                 views: {
@@ -56,17 +55,15 @@ function ChartsCtrl() {
 
     vm.updateChart = function(form) {
 
-        if (form.$valid ) {
-            
+        if (form.$valid) {
+
             vm.chartData = vm.updateChartData();
-            
+
         } else {
-            
+
             vm.addErrors = true;
-            
+
         }
-        
+
     };
 }
-
-})();
