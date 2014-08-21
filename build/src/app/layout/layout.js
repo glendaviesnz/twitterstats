@@ -1,3 +1,5 @@
+(function () {
+ 'use strict';
 
 angular.module('twitterstats.layout', ['ui.router', 'ui.bootstrap'])
 
@@ -18,3 +20,5 @@ angular.module('twitterstats.layout', ['ui.router', 'ui.bootstrap'])
             });
         });
 
+
+})();

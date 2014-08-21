@@ -1,3 +1,5 @@
+(function () {
+ 'use strict';
 
 angular.module('authentication', [])
 
@@ -88,3 +90,5 @@ function authenticationInit($window, $rootScope, $state, authenticationService) 
         }
     };
 }
+
+})();

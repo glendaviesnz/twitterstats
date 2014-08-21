@@ -1,3 +1,5 @@
+(function () {
+ 'use strict';
 
 angular.module('twitterstats', [
     'ngAnimate',
@@ -32,3 +34,5 @@ function MasterCtrl($scope, authenticationService) {
         authenticationService.logout();
     };
 }
+
+})();

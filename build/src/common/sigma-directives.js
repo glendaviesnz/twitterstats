@@ -1,3 +1,5 @@
+(function () {
+ 'use strict';
 
 //add function for higlighting node neigbours
 sigma.classes.graph.addMethod('neighbors', function(nodeId) {
@@ -102,3 +104,5 @@ angular.module('sigmaDirectives', [])
                 }
             };
         });
+
+})();

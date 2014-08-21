@@ -1,3 +1,5 @@
+(function () {
+ 'use strict';
 
 angular.module('twitterstats.charts', ['ui.router', 'nvd3ChartDirectives'])
 
@@ -67,3 +69,5 @@ function ChartsCtrl() {
 
     };
 }
+
+})();

@@ -1,3 +1,5 @@
+(function () {
+ 'use strict';
 
 angular.module('common', [])
         .factory('dataService', function() {
@@ -85,3 +87,5 @@ angular.module('common', [])
             
             return dataService;
         });
+
+})();
