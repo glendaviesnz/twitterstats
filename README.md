@@ -1,5 +1,5 @@
 #Twitterstats
-This is a personal project space to showcase my views on what a scalable Angular JS SPA architecture should look like, along with a bit of D3 and Sigma graph integration for good measure. 
+This is a personal project space to showcase my views on what a scalable Angular JS SPA architecture could look like, along with a bit of D3 and Sigma graph integration for good measure. 
 
 The app can be viewed at [http://glendaviesnz.github.io/twitterstats/](http://glendaviesnz.github.io/twitterstats/). While the authentication module with oauth login via google is in place it is currently disabled, so the 'Login with Google' button actually just logs you straight in.
 
