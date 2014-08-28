@@ -1,9 +1,11 @@
 #Twitterstats
-This is a personal project space to showcase some Angular JS, setup with D3 and Sigma graphs integrated. 
+This is a personal project space to showcase my views on what a scalable Angular JS SPA architecture should look like, along with a bit of D3 and Sigma graph integration for good measure. 
 
 The app can be viewed at [http://glendaviesnz.github.io/twitterstats/](http://glendaviesnz.github.io/twitterstats/). While the authentication module with oauth login via google is in place it is currently disabled, so the 'Login with Google' button actually just logs you straight in.
 
 This is not intended to be 'yet another' Angular boilerplate/seed project - it is a personal demo site only.
+
+A big thanks to [John Papa](https://twitter.com/John_Papa) and [Todd Motto](https://twitter.com/toddmotto) for sharing their opinions on Angular app architecture which has influenced this setup.
 
 ##Setup
 
