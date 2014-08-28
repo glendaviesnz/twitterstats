@@ -5,7 +5,7 @@ The app can be viewed at [http://glendaviesnz.github.io/twitterstats/](http://gl
 
 This is not intended to be 'yet another' Angular boilerplate/seed project - it is a personal demo site only.
 
-A big thanks to [John Papa](https://twitter.com/John_Papa) and [Todd Motto](https://twitter.com/toddmotto) for sharing their opinions on Angular app architecture which has influenced this setup.
+A big thanks to [John Papa](https://twitter.com/John_Papa) and [Todd Motto](https://twitter.com/toddmotto) for sharing their opinions on Angular app architecture, which has influenced this setup.
 
 ##Setup
 
@@ -39,6 +39,7 @@ To build the production version 'grunt compile' can be run which compiles all ja
 ##To Do
 
 * Finish Sigma directive to make it completely modular with ability to pass in configuration so it can potentially be released as an open source module
+* Investigate replacing the Grunt workflow automation with Gulp
 * ~~Setup up unit and end to end testing properly~~
 * ~~Fix bootstrap responsive dropdown menu - currently broken when resizing to mobile size~~
 * Get D3 graphs to resize slightly when at mobile width
