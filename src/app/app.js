@@ -9,6 +9,7 @@ angular.module('twitterstats', [
     'twitterstats.dashboard',
     'twitterstats.networks',
     'twitterstats.charts',
+    'twitterstats.maps',
     'ui.router'
 ])
         .config(function($urlRouterProvider) {

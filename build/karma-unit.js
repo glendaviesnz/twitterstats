@@ -21,6 +21,7 @@ module.exports = function ( karma ) {
       'vendor/sigma/plugins/sigma.plugins.dragNodes.min.js',
       'vendor/sigma/plugins/sigma.layout.forceAtlas2.min.js',
       'vendor/lodash/lodash.js',
+      'vendor/leaflet/leaflet.js',
       'build/templates-app.js',
       'build/templates-common.js',
       'vendor/angular-mocks/angular-mocks.js',

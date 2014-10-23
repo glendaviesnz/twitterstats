@@ -1,4 +1,4 @@
-angular.module('templates-app', ['auth/login.tpl.html', 'charts/charts.tpl.html', 'dashboard/dashboard.tpl.html', 'layout/main.tpl.html', 'layout/side-navigation.tpl.html', 'networks/networks.tpl.html']);
+angular.module('templates-app', ['auth/login.tpl.html', 'charts/charts.tpl.html', 'dashboard/dashboard.tpl.html', 'layout/main.tpl.html', 'layout/side-navigation.tpl.html', 'maps/maps.tpl.html', 'networks/networks.tpl.html']);
 
 angular.module("auth/login.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("auth/login.tpl.html",
@@ -246,6 +246,10 @@ angular.module("layout/side-navigation.tpl.html", []).run(["$templateCache", fun
     "                class=\"\" > \n" +
     "\n" +
     "                <a ui-sref=\"home.charts\"><i class=\"fa fa-bar-chart-o\"></i> Chart maker</a></li>\n" +
+    "<li\n" +
+    "                class=\"\" > \n" +
+    "\n" +
+    "                <a ui-sref=\"home.maps\"><i class=\"fa fa-bar-chart-o\"></i> Maps</a></li>\n" +
     "\n" +
     "        </ul>\n" +
     "\n" +
@@ -266,6 +270,32 @@ angular.module("layout/side-navigation.tpl.html", []).run(["$templateCache", fun
     "    </div><!-- /.navbar-collapse -->\n" +
     "\n" +
     "</nav>\n" +
+    "");
+}]);
+
+angular.module("maps/maps.tpl.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("maps/maps.tpl.html",
+    "\n" +
+    "\n" +
+    "<section class=\"panel panel-default\">\n" +
+    "    <div class=\"panel-heading\">\n" +
+    "        <strong>\n" +
+    "            <i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i><i class=\"fa fa-ellipsis-v dashboard-panel-icon\"></i>\n" +
+    "            <span data-i18n=\"Data\">Maps test</span>\n" +
+    "\n" +
+    "        </strong>\n" +
+    "\n" +
+    "    </div>\n" +
+    "    <div>\n" +
+    "        <div data-leaflet-map \n" +
+    "             data-long=\"-45.864684\" \n" +
+    "             data-lat=\"120\">\n" +
+    "        </div>\n" +
+    "    </div>\n" +
+    "\n" +
+    "</section>\n" +
+    "\n" +
+    "\n" +
     "");
 }]);
 
